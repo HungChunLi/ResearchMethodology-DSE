@@ -9,6 +9,7 @@ trash/
 .Rproj.user
 .RData
 .Rhistory
+DSE-5.Rproj
 
 *.aux
 *.nav
