@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{資料整理過程}{4}{0}{1}
-\beamer@sectionintoc {2}{分析結果}{6}{0}{2}

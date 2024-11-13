@@ -10,9 +10,9 @@ trash/
 .RData
 .Rhistory
 
-.aux
-.nav
-.out
-.snm
-.synctex.gz
-.toc
+*.aux
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc

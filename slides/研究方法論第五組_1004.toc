@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{資料來源與資料整理過程}{3}{0}{1}
-\beamer@sectionintoc {2}{主要變數之定義}{9}{0}{2}
-\beamer@sectionintoc {3}{主要變數之敘述統計}{11}{0}{3}
