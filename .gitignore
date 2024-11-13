@@ -16,4 +16,6 @@ trash/
 *.snm
 *.synctex.gz
 *.toc
+*.DS_Store
 
+missfont.log
