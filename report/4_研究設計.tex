@@ -1,0 +1,28 @@
+\section{研究設計}
+
+本文分別採用 AIDS (Almost Ideal Demand System)和 LA/AIDS (Linear Approximate AIDS) 兩種需求系統模型進行分析。
+兩種方法皆用於分析多個商品的需求及其需求彈性，主要差別在於價格指數的處理方式，。
+以下兩節將分別敘述 AIDS 及 LA/AIDS 的模型架構。
+
+\subsection{使用AIDS模型分析}
+
+\[
+	w_i = \alpha_i + \sum_{j=1}^{5} \gamma_{ij} \ln(P_j) + \beta_i \ln\left(\frac{X}{P}\right),
+\]
+\begin{itemize}
+	\item $w_i = \frac{P_i Q_i}{X}$: expenditure share of the $i$-th beverage category
+	\begin{itemize}
+		\item $P_i$ is the price of the $i$-th beverage
+		\item $Q_i$ is the quantity of the $i$-th beverage
+		\item $X$ is the total expenditure on all beverages, which may vary with monthly income
+	\end{itemize}
+	\item $\ln(P_j)$: The natural logarithm of the price of the $j$-th beverage
+	\item $P$: Price index, typically approximated by the Stone price index:
+	\begin{equation*}
+	\ln(P) = \sum_{j=1}^{5} w_j \ln(P_j),
+	\end{equation*}
+	where $w_j$ is the expenditure share of the $j$-th beverage
+	\item $\alpha_i$, $\gamma_{ij}$, $\beta_i$: Parameters to be estimated for each beverage category
+\end{itemize}
+
+\subsection{使用LAAIDS模型分析}

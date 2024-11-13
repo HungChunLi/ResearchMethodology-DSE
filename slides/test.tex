@@ -1,0 +1,65 @@
+\documentclass{beamer}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{frame}{Empirical results: Constructing treatment status}
+\begin{table}[H]
+\centering
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l*{4}{S[table-format=2.1]}}
+    \Xhline{1pt}
+     & {\multirow{2}{*}{Control}} & \multicolumn{3}{c}{Treated} \\
+     \cmidrule
+     & & {All} & {Repeal} & {Decrease} \\
+    \Xhline{0.8pt}
+    Log net estate & 14.9 & 16.2 & 15.8 & 16.6 \\
+    Age & 74.3 & 75.3 & 75.1 & 75.4  \\
+    Num of kids &  3.5 & 3.6 & 3.5 & 3.7 \\
+    Male (share) &  68 & 69 & 66 & 72 \\
+    Married (share) &  52 & 53 & 47 & 58 \\
+    \addlinespace[1ex]
+    Num of observations &  99,891 &  45,838 & 20,701 & 25,137 \\
+    \Xhline{1pt}
+\end{tabular*}
+\end{table}
+\end{frame}
+
+
+
+
+\begin{frame}{Results: Elasticity by treated group}
+    \centering
+    \begin{tabular}{lcccc}
+    \hline
+    Treated is & & All & Repeal & Decrease \\
+      & & (1) & (2) & (3) \\
+    \hline
+    \textbf{Panel A: Log net estate} \\
+    Treated $\times$ Post & & 0.099  & 0.116 & 0.133  \\
+    & & (0.013) & (0.014) & (0.016)  \\  
+    \hline
+    \textbf{Panel B: Log net-of-tax-rate} \\
+    Treated $\times$ Post & & 0.102&  \textcolor{red}{0.031}  & \textcolor{red}{0.154} \\
+    & & (0.001) & \textcolor{red}{(0.001)} & \textcolor{red}{(0.002)} \\
+    \hline
+    \textbf{Implied elasticity} \\
+    & & 0.970 & 3.755 & 0.863 \\
+    & & (0.161) & (0.468) & (0.171) \\
+    \addlinespace[1ex]
+    Treated N & & 45,838 & 20,721 & 25,137 \\
+    \hline
+    \end{tabular}
+\end{frame}
+
+
+
+
+\end{document}
+
+
+
