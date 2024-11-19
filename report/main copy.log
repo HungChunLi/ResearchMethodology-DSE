@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.6.15)  19 NOV 2024 15:58
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.6.15)  19 NOV 2024 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/brianhjli/Dropbox/113-1/Research Methodology/DSE-5/report/main"
-(/Users/brianhjli/Dropbox/113-1/Research Methodology/DSE-5/report/main.tex
+**"/Users/brianhjli/Dropbox/113-1/Research Methodology/DSE-5/report/main copy"
+(/Users/brianhjli/Dropbox/113-1/Research Methodology/DSE-5/report/main copy.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -740,12 +740,9 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen332
 \titlewidthlast=\dimen333
 \titlewidthfirst=\dimen334
-) (./main.aux
-
-LaTeX Warning: Label `fig.gdp_fertility' multiply defined.
-
 )
-\openout1 = `main.aux'.
+No file "main copy".aux.
+\openout1 = `"main copy.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
@@ -757,7 +754,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 86.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -828,10 +825,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 86.
 Package hyperref Info: Link coloring ON on input line 86.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -882,9 +882,77 @@ Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKsansfont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-[2] (./2_文獻回顧.tex) (./3_資料與敘述統計.tex [3]) (./4_研究設計.tex [4] [5]) (./5_研究結果.tex
+
+Package natbib Warning: Citation `Ruhm' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `Jacobson' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `lachowska' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `Sullivan' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `Kuhn' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `Schaller' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `eliason2009job' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `eliason2009does' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `Browning' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `coope2015characteristics' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `canavan2021moderating' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `cygan2017bounding' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `salm2009does' on page 2 undefined on input line 122.
+
+
+Package natbib Warning: Citation `keefe2002serious' on page 2 undefined on input line 122.
+
+(./2_文獻回顧.tex
+
+Package natbib Warning: Citation `RN2' on page 2 undefined on input line 3.
+
+[2]
+
+Package natbib Warning: Citation `RN1' on page 3 undefined on input line 5.
+
+
+Package natbib Warning: Citation `RN9' on page 3 undefined on input line 7.
+
+
+Package natbib Warning: Citation `RN3' on page 3 undefined on input line 7.
+
+
+Package natbib Warning: Citation `Rn15' on page 3 undefined on input line 9.
+
+
+Package natbib Warning: Citation `RN3' on page 3 undefined on input line 11.
+
+) (./3_資料與敘述統計.tex [3]) (./4_研究設計.tex [4] [5]) (./5_研究結果.tex
 
 LaTeX Warning: Reference `eventstudy' on page 6 undefined on input line 3.
+
+
+LaTeX Warning: Reference `emp_e' on page 6 undefined on input line 6.
+
+
+LaTeX Warning: Reference `earnings' on page 6 undefined on input line 6.
 
 
 LaTeX Warning: Reference `mental' on page 6 undefined on input line 6.
@@ -897,6 +965,12 @@ LaTeX Warning: Reference `eventstudy' on page 7 undefined on input line 10.
 LaTeX Warning: Reference `event' on page 7 undefined on input line 10.
 
 
+Package natbib Warning: Citation `lachowska' on page 7 undefined on input line 10.
+
+
+Package natbib Warning: Citation `schmieder' on page 7 undefined on input line 10.
+
+
 LaTeX Warning: Reference `eventstudy' on page 7 undefined on input line 10.
 
 )
@@ -906,63 +980,65 @@ LaTeX Warning: Reference `dis_robust' on page 7 undefined on input line 135.
 
 LaTeX Warning: Reference `dis_hetero' on page 7 undefined on input line 135.
 
-[7] [8] (./main.bbl [9] [10]) [11]
+[7] [8]
+No file "main copy".bbl.
+
 Overfull \hbox (24.56969pt too wide) in paragraph at lines 163--205
  [][] 
  []
 
 Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
-[12]
+[9]
 Overfull \hbox (2.80234pt too wide) in paragraph at lines 224--251
  [][] 
  []
 
 
-LaTeX Warning: Reference `event' on page 13 undefined on input line 255.
+LaTeX Warning: Reference `event' on page 10 undefined on input line 255.
 
-[13]
+[10]
 File: figures/Figure1_d_employed.png Graphic file (type bmp)
 <figures/Figure1_d_employed.png>
 File: figures/Figure1_real_wage.jpg Graphic file (type bmp)
 <figures/Figure1_real_wage.jpg>
- [14]
+ [11]
 File: figures/FC1.jpg Graphic file (type bmp)
 <figures/FC1.jpg>
 
 
-Package natbib Warning: Citation `owidfertilityrate' on page 15 undefined on input line 298.
+Package natbib Warning: Citation `owidfertilityrate' on page 12 undefined on input line 298.
 
 
-Package natbib Warning: Citation `owidgdp' on page 15 undefined on input line 298.
+Package natbib Warning: Citation `owidgdp' on page 12 undefined on input line 298.
 
-[15]
+[12]
 File: figures/SCM_us_ch.png Graphic file (type bmp)
 <figures/SCM_us_ch.png>
 
 
-Package natbib Warning: Citation `owidfertilityrate' on page 16 undefined on input line 310.
+Package natbib Warning: Citation `owidfertilityrate' on page 13 undefined on input line 310.
 
 
-Package natbib Warning: Citation `owidgdp' on page 16 undefined on input line 310.
+Package natbib Warning: Citation `owidgdp' on page 13 undefined on input line 310.
 
 
 Package natbib Warning: There were undefined citations.
 
-[16] (./main.aux)
+[13] (./main copy.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 28001 strings out of 476683
- 592176 string characters out of 5804047
- 1870018 words of memory out of 5000000
- 47739 multiletter control sequences out of 15000+600000
- 522922 words of font info for 108 fonts, out of 8000000 for 9000
+ 27933 strings out of 476683
+ 591050 string characters out of 5804047
+ 1872018 words of memory out of 5000000
+ 47677 multiletter control sequences out of 15000+600000
+ 522914 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,15n,89p,1373b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,15n,89p,1378b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (16 pages).
+Output written on main copy.pdf (13 pages).

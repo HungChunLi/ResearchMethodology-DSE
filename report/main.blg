@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: chicago.bst
+Database file #1: DSE_citation.bib
+Warning--I didn't find a database entry for "owidfertilityrate"
+Warning--I didn't find a database entry for "owidgdp"
+Warning--page numbers missing in RN3
+Warning--page numbers missing in RN1
+You've used 20 entries,
+            2861 wiz_defined-function locations,
+            758 strings with 8484 characters,
+and the built_in function-call counts, 15100 in all, are:
+= -- 1255
+> -- 1194
+< -- 0
++ -- 370
+- -- 410
+* -- 1464
+:= -- 2734
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 155
+chr.to.int$ -- 19
+cite$ -- 22
+duplicate$ -- 351
+empty$ -- 869
+format.name$ -- 477
+if$ -- 2806
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 104
+num.names$ -- 198
+pop$ -- 95
+preamble$ -- 2
+purify$ -- 273
+quote$ -- 0
+skip$ -- 380
+stack$ -- 0
+substring$ -- 854
+swap$ -- 114
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 396
+warning$ -- 2
+while$ -- 191
+width$ -- 0
+write$ -- 263
+(There were 4 warnings)

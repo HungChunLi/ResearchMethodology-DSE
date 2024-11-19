@@ -1,0 +1,25 @@
+% \section{資料與敘述統計}\label{data}
+
+% \subsection{資料}
+% Our study employs administrative data acquired from Taiwan's Health and Welfare Data Science Center (HWDC) to carry out the empirical analysis. We specifically make use of four distinct data sources from the HWDC: (1) National Health Insurance (NHI) enrollment records; (2) NHI claim files for outpatient care; (3) NHI claim files for inpatient care. To connect individuals across these data sources, we utilize their scrambled national identification numbers.
+
+
+% \subsection{敘述統計}\label{em_strategy}
+% Our sample comprises individuals aged 20-65 who were employed in a firm with at least 5 employees in the baseline year. We define displaced workers, our treatment group, as those who were employed for a minimum of five years prior to losing their jobs and underwent a mass layoff in a given year between 2005 and 2007. A mass layoff is characterized by a firm reducing its employment by over 90\% compared to the previous year. We track these workers for 16 years, including five years before and ten years after job loss. The control group consisted of non-displaced workers who had continuous employment during the sample period and worked in stable firms, which had no more than a 30\% employment decrease in December year-on-year.\footnote{Note that they are not necessary to stay in the same firm.} Since many workers satisfy this criterion, we randomly select 10\% of them to serve as the control group. Our final sample is resulting in 9,700 workers from the treatment group and 332,720 from the control group.
+
+% Our empirical strategy to identify the dynamic effects of displacement on earnings and mental health involves estimating the following regression:
+% \begin{equation}\label{event}
+% 	Y_{it}= \underset{k = -5}{\overset{10}{\sum }}\delta_{k} \cdot Disp_{i} \times \mathbf{I}[t=c+k] + \underset{k = -5}{\overset{10}{\sum }}\gamma_{k} \cdot \mathbf{I}[t=c+k] 
+% 	+ \alpha_i 
+% 	+ \pi_t
+% 	+ X_{it} \beta
+% 	+\varepsilon_{it}.
+% \end{equation}
+% $Y_{it}$ is the outcome of interest for worker $i$ in year $t$: 1) Employment (a dummy indicating working for at least one month per year or not); 2) Annual earnings; 3) Cumulative number of visits for mental illness; 4) Cumulative medical expenses of mental illness (including both outpatient and inpatient care).   $Disp_{i}$ indicates whether worker $i$ is a displaced worker. $I(t=c+k)$ is a dummy variable indicating $k$ years after (pseudo) mass layoff year, $c$, where $k$ does not include $-2$ since we consider two years prior to a job loss as the reference year.\footnote{For the comparison group, the pseudo mass layoff year is the year we use to confirm the firm did {\it not} go through a mass layoff and remain no more than 30\% reduction in the firm size.)} $\gamma_{k}$ represents the evolution of outcomes among non-displaced workers. $\delta_{k}$ is the coefficient of interest, which measures the change in outcomes among displaced workers with respect to the reference year ($k=-2$), relative to the change of non-displaced workers. We additionally control individual fixed effects ($\alpha_i$) and calendar year fixed effects ($\pi_t$). $X_{it}$ are other controls, mainly quartic function of worker's age and county/municipality level unemployment rate.
+
+\section{資料蒐集與處理}
+\subsection{資料蒐集}
+本研究使用的資料主要來自於「經濟部工業產銷存動態調查資料庫」，涵蓋5種飲料類別（果蔬汁飲料、碳酸飲料、運動飲料、咖啡飲料及茶類飲料）的銷售量與銷售值的月資料，詳細記錄了每種飲料的市場表現。此外，另一部分資料來自於「勞動部勞動統計查詢網」的國民所得月度統計資料，用以反映消費者的收入水準。所有資料的涵蓋期間為1982年至2024年，共收集到547筆月統計資料，確保了樣本的時間跨度。這些數據不僅提供了每類飲料的銷售量和銷售值，也包含了與消費行為密切相關的消費者所得，為後續的DSE（Demand System Estimation）分析提供了關鍵依據。
+
+\subsection{資料處理}
+在完成資料蒐集後，我們按步驟進行了資料處理，目的是提高數據的可靠性與一致性。首先，我們使用 R 統計軟體對資料進行清理，包括合併不同來源的數據、去除重複資料、以及處理遺漏值等工作。對於部分遺漏值，考量到補值可能帶來的偏誤，我們選擇將無法合理填補的觀察值移除。此外，由於不同飲料類別的統計起始時間不一致，我們將分析的起始時間進行統一，確保資料具有可比性。為了進一步豐富研究變數，我們還根據銷售量與銷售值兩個變數計算並新增了每種飲料的單位價格，為我們後續使用模型估計去衡量價格對消費者需求的影響提供了必要的解釋變數。
