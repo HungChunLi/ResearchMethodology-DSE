@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.6.15)  20 NOV 2024 01:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.6.15)  20 NOV 2024 03:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -932,21 +932,27 @@ LaTeX Warning: Reference `dis_hetero' on page 7 undefined on input line 139.
 ] [10])) [11]
 \openout2 = `tables.aux'.
 
- (./tables.tex (./tables/marshall.tex)
-Overfull \hbox (307.54506pt too wide) in paragraph at lines 3--9
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--9
-
- []
-
-(./tables/test.tex) [12
+ (./tables.tex (./tables/aids_coef.tex)
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+[12
 
 
 
-]) [13]
+] (./tables/laaids_coef.tex) [13]
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+[14] (./tables/aids_exp.tex)
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+(./tables/laaids_exp.tex)
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+(./tables/aids_marshall.tex) [15]
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+(./tables/laaids_marshall.tex)
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+(./tables/aids_hicks.tex) [16]
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+(./tables/laaids_hicks.tex)
+Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
+[17])
 \openout2 = `figures.aux'.
 
  (./figures.tex
@@ -954,7 +960,7 @@ File: figures/Figure1_d_employed.png Graphic file (type bmp)
 <figures/Figure1_d_employed.png>
 File: figures/Figure1_real_wage.jpg Graphic file (type bmp)
 <figures/Figure1_real_wage.jpg>
- [14
+ [18
 
 
 
@@ -963,22 +969,22 @@ File: figures/FC1.jpg Graphic file (type bmp)
 <figures/FC1.jpg>
 
 
-Package natbib Warning: Citation `owidfertilityrate' on page 15 undefined on input line 38.
+Package natbib Warning: Citation `owidfertilityrate' on page 19 undefined on input line 38.
 
 
-Package natbib Warning: Citation `owidgdp' on page 15 undefined on input line 38.
+Package natbib Warning: Citation `owidgdp' on page 19 undefined on input line 38.
 
-[15]
+[19]
 File: figures/SCM_us_ch.png Graphic file (type bmp)
 <figures/SCM_us_ch.png>
 
 
-Package natbib Warning: Citation `owidfertilityrate' on page 16 undefined on input line 50.
+Package natbib Warning: Citation `owidfertilityrate' on page 20 undefined on input line 50.
 
 
-Package natbib Warning: Citation `owidgdp' on page 16 undefined on input line 50.
+Package natbib Warning: Citation `owidgdp' on page 20 undefined on input line 50.
 
-) [16]
+) [20]
 
 Package natbib Warning: There were undefined citations.
 
@@ -991,12 +997,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28977 strings out of 476683
- 613992 string characters out of 5804047
+ 29008 strings out of 476683
+ 614729 string characters out of 5804047
  1870018 words of memory out of 5000000
- 48673 multiletter control sequences out of 15000+600000
+ 48686 multiletter control sequences out of 15000+600000
  521350 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,11n,89p,1374b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on DSE-5.pdf (16 pages).
+Output written on DSE-5.pdf (20 pages).
