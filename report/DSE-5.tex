@@ -1,0 +1,153 @@
+ 
+\documentclass[12pt]{article}
+
+%打中文需要以下packages
+\usepackage{xeCJK} 
+\setCJKmainfont[BoldFont={cwTeXHeiBold}, ItalicFont={FandolSong}]{cwTeXMing} %Overleaf 中文字型設定
+%\setCJKmainfont[BoldFont={cwTeX Q HeiZH}, ItalicFont={新細明體}]{cwTeX Q Ming}	
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt %這兩行一定要加,中文才能自動換行
+
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[counterclockwise]{rotating}
+\usepackage[hidelinks]{hyperref}
+%\hypersetup{colorlinks,urlcolor=blue}
+\hypersetup{colorlinks=true,citecolor=blue,pdfborder=000, urlcolor=red}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage[round,semicolon]{natbib}  % This is for reference
+\usepackage{cite}  % This is for reference
+\usepackage{longtable}
+%\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\usepackage{epstopdf}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{natbib} %This code is for Mac
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\renewcommand{\arraystretch}{1.0} % 將表格行間距加大為原來的 1.2 倍
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+%\pagestyle{fancy} % options: empty , plain , fancy
+\usepackage{float} % 可固定表的位置
+\usepackage{lscape}
+\usepackage{bookmark} % Allow customized pdf bookmark
+\usepackage{tabularx}
+
+\setcounter{MaxMatrixCols}{12}
+
+\renewcommand{\baselinestretch}{1.0}
+\usepackage{indentfirst}
+\usepackage{setspace,caption}
+\captionsetup{font=doublespacing}% Double-spaced float captions
+\doublespacing% Double-spaced document text
+
+\setlength{\topmargin}{-0.5in}
+\setlength{\textheight}{8.8in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\textwidth}{6.5in}
+%\input{tcilatex}
+
+%%%%%%%  Change to Times New Roman format
+\usepackage[tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
+%\usepackage{fontspec}
+%\usepackage{xcolor}
+\usepackage{titlesec}
+%\defaultfontfeatures{Ligatures=TeX}
+% Set sans serif font to Arial
+%\setsansfont{Arial}
+% Set serifed font to Times New Roman
+%\setmainfont{Times New Roman}
+% Set formats for each heading level
+\titleformat*{\section}{\fontsize{16}{18}\bfseries\sffamily}
+\titleformat*{\subsection}{\fontsize{14}{16}\bfseries\sffamily}
+\titleformat*{\subsubsection}{\fontsize{12}{14}\bfseries\sffamily}
+
+\newcommand{\bm}[1]{\boldsymbol{#1}}
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+\newcommand{\remarks}[1]{{\bf\color{cadmiumgreen}[#1]}}
+\newcommand{\commentout}[0]{}
+
+% https://github.com/HungChunLi/ResearchMethodology-DSE
+
+\usepackage{tabularx}
+
+% \usepackage{datatool}
+\usepackage{csvsimple}
+\usepackage{booktabs} % 可選，用於美化表格
+
+\begin{document}
+	
+	\title{\Large 初探台灣飲料市場需求體系}
+	
+	\author{\normalsize 黎宏濬\thanks{National Taiwan University, Email: r11627065@ntu.edu.tw}, 張立宏\thanks{National Taiwan University, Email: r11627065@ntu.edu.tw.},  林孝儒\thanks{National Taiwan University, Email: r11627065@ntu.edu.tw.},  許震浩\thanks{National Taiwan University, Email: r12323052@ntu.edu.tw.} \medskip}
+	%{\normalsize \textbf{Job Market Paper 2}}}
+	
+	
+	\maketitle
+	
+\begin{abstract}
+This paper investigates the long-term effects of job displacement on earnings and mental health using administrative health claims data from Taiwan. Focusing on job loss resulting from mass layoffs, our estimates suggest a displaced worker experienced a 40\% decline in employment rates and a 67\% earning loss in the year following a layoff. Even after ten years, employment and earnings do not fully recover. Displaced workers also experience a deterioration in mental health, particularly related to stress, with a 16\% increase in outpatient visits for mental health issues and a 57\% increase in medical costs for mental illness. The negative impact on mental health is more pronounced among workers with lower earnings, men, and older individuals.
+	
+\end{abstract}
+
+
+\newpage
+
+\section{前言}
+\subsection{研究背景}
+新型冠狀病毒 (COVID-19) 自 2019 年出現, 
+累計至 2023 年1月全球已約 6.7 億人確診, 造成 682 萬人死亡, 堪稱是本世紀最嚴重的傳染疾病。
+為避免疫情擴散, 許多國家採取管制措施, 諸如禁止邊境進出、限制民眾外出、餐廳禁止內用及取消大型活動等, 
+這些措施嚴重衝擊國內外經濟, 以美國為例, 2020年 第二季國內生產毛額 (GDP) 較 2019 年同季萎縮 9\%, 
+失業率飆升至 14.8\%。
+\subsection{研究目的}
+台灣在 2020 年 1 月 21 日發現首起本土確診病例, 
+且在 2 月15 日出現首起死亡案例。
+雖然後續的防疫政策奏效, 疫情相較其他國家輕微, 
+但民眾因疫情肆虐恐慌減少正常活動, 再加上邊境管制,\footnote{中央流行疫情指揮中心宣布從 3 月19 日零時起, 非台灣籍人士一律限制入境。}
+使國內經濟活力受到相當大的影響, 2020 年第 2 季經濟成長率僅 0.63\%, 
+其中又以批發及零售業、餐飲業、運輸及倉儲業首當其衝。\footnote{依行政院主計總處公布之 2020 年第 2 季國內生產毛額連鎖實質成長率 (與去年同期相較), 服務業整體為 -1.33\%, 其中以運輸及倉儲業的 -26.19\%, 其他 (含餐飲業) -4.04\%, 與批發及零售業的 0.17\% 表現最差。}
+
+
+%https://conversableeconomist.blogspot.com/2020/02/writing-intro-to-your-economics.html
+
+It is widely recognized that worker displacement can result in long-term earnings losses \citep{Ruhm,Jacobson,lachowska}. Moreover, research has demonstrated that it is associated with heightened risk for health issues and increased mortality rates \citep{Sullivan,Kuhn,Schaller,eliason2009job,eliason2009does,Browning}. Despite significant research on the topic, the relationship between job loss and mental health remains somewhat ambiguous and poses challenges. On one hand, job loss can result in financial difficulties, loss of status, and social disconnection \citep{coope2015characteristics,canavan2021moderating}, which can contribute to feelings of anxiety and depression. On the other hand, job loss may alleviate some of the mental health problems that comes with working. Although numerous studies have explored the impact of job loss on mental health, there is no consensus on the extent of its effects \citep{cygan2017bounding}, and some studies have even found no significant impact \citep{salm2009does,keefe2002serious}.
+
+
+
+\input{2_文獻回顧.tex}
+
+\input{3_資料與敘述統計.tex}
+
+\input{4_研究設計.tex}
+
+\input{5_研究結果.tex}
+
+\subsection{}
+We discuss a number of robustness checks for our main findings in Online Appendix \ref{dis_robust}, including different matching techniques, different estimation methods, and different choices of samples. In general, our main results are robust to these changes. Moreover, we conduct a set of subgroup analyses and discuss these results in the Online Appendix \ref{dis_hetero}. To sum up, our analysis suggests that the negative effect of job displacement on mental health appears to be more pronounced among lower-income workers, men, and older individuals.
+
+\section{結論}\label{conclusion}
+
+地區的限制性 Using Taiwan's administrative data, we examined the effects of job displacement on employment, earnings, and mental health. Due to the mandatory and generous nature of Taiwan's NHI, our study are less likely to suffer from sample attrition and to be confounded with changes in health insurance enrollment. On the other hand, the comprehensive NHI data allows us to explore the impact of displacement on both outpatient and inpatient healthcare use.
+
+
+
+\include{references}
+
+\include{tables}
+
+\include{figures}
+
+\end{document}

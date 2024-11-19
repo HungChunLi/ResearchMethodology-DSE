@@ -30,26 +30,27 @@ w_i = \frac{P_i Q_i}{X}.
 其中，\(\alpha_0\) 是基準常數，用於表示價格指數的基本水平；\(\alpha_j\) 是第 \(j\) 類飲料價格的影響係數；\(\gamma_{jk}\) 是第 \(j\) 和第 \(k\) 類飲料價格的交叉效應，用於衡量價格互動對需求的影響。
 由於價格指數 \(P\) 的非線性形式較難直接處理，在 LA/AIDS 模型中，通常會選擇線性近似方法來簡化價格指數的計算，例如使用 Stone 指數：
 \begin{equation}
-	\ln(P) \approx \ln(P) = \sum_{j=1}^{5} w_j \ln(P_j),
+	\ln(P) \approx \ln(P) = \sum_{j=1}^{5} w_j \ln(P_j).
 \end{equation}
 
 \subsection*{彈性}
 AIDS 模型允許我們計算三種類型的需求彈性：
 \begin{itemize}
     \item \textbf{支出彈性} (\(\eta_i\))：
-    \[
+    \begin{equation}
     \eta_i = 1 + \frac{\beta_i}{w_i},
-    \]
-    該彈性表示總支出變化對第 \(i\) 類飲料需求的影響。當 \(\eta_i > 1\) 時，該飲料為奢侈品；當 \(\eta_i < 1\) 時，則為必需品。
+    \end{equation}
+    該彈性表示總支出變化對第 \(i\) 類飲料需求的影響。
+    % 當 \(\eta_i > 1\) 時，該飲料為奢侈品；當 \(\eta_i < 1\) 時，則為必需品。
     \item \textbf{自價格彈性} (\(\varepsilon_{ii}\))：
-    \[
+    \begin{equation}
     \varepsilon_{ii} = -1 + \frac{\gamma_{ii}}{w_i} - \beta_i \ln(X / P),
-    \]
+    \end{equation}
     該彈性衡量第 \(i\) 類飲料價格變化對其自身需求的影響，通常為負值。
     \item \textbf{交叉價格彈性} (\(\varepsilon_{ij}\))：
-    \[
+    \begin{equation}
     \varepsilon_{ij} = \frac{\gamma_{ij}}{w_i} - \beta_i \ln(X / P),
-    \]
+    \end{equation}
     該彈性衡量第 \(j\) 類飲料價格變化對第 \(i\) 類飲料需求的影響。若 \(\varepsilon_{ij} > 0\)，則說明兩者為替代品；若 \(\varepsilon_{ij} < 0\)，則為互補品。
 \end{itemize}
 

@@ -8,6 +8,7 @@ library(readxl)
 library(dplyr)
 library(data.table)
 library(ggplot2)
+library(xtable)
 
 # 設定工作目錄
 user <- Sys.info()["user"]
@@ -87,11 +88,28 @@ aids_model <- aidsEst(
   priceNames = priceCols,
   shareNames = shareCols, 
   totExpName = incomeCols[1], 
-  data = fullData, priceIndex = "S", method = "IL")
+  data = fullData, priceIndex = "T", method = "IL")
 summary(aids_model)
+aids_elasticities <- aidsElas(
+  coef = aids_model$coef,  # Pass coefficients manually
+  shares = aids_model$wMeans,  # Average budget shares
+  prices = aids_model$pMeans   # Average prices
+)
 
-write.csv(as.data.frame(aids_model$coef$stat), "outcome/output_1105_aids.csv")
+write.csv(as.data.frame(aids_model$coef$stat), "outcome/output_aids_stat.csv", quote = FALSE)
+write.csv(as.data.frame(aids_elasticities$exp), "outcome/output_aids_exp.csv", quote = FALSE)
+write.csv(as.data.frame(aids_elasticities$marshall), "outcome/output_aids_marshall.csv", quote = FALSE)
+write.csv(as.data.frame(aids_elasticities$hicks), "outcome/output_aids_hicks.csv", quote = FALSE)
 saveRDS(aids_model, file = "outcome/aids_model.rds")
+saveRDS(aids_elasticities, file = "outcome/aids_elasticities.rds")
+
+
+# xt <- xtable(as.data.frame(aids_elasticities$marshall))
+xt <- xtable(aids_elasticities$marshall)
+align(xt) <- c("c", "c", "c", "c", "c", "c")
+print(xt, file = "report/tables/marshall.tex", floating = FALSE)
+
+
 
 # 進行 LAAIDS 模型估計
 laaids_model <- aidsEst(
@@ -100,9 +118,17 @@ laaids_model <- aidsEst(
   totExpName = incomeCols[1], 
   data = fullData, priceIndex = "S", method = "LA")
 summary(laaids_model)
+laaids_elasticities <- aids_elasticities <- aidsElas(
+  coef = aids_model$coef,  # Pass coefficients manually
+  shares = aids_model$wMeans,  # Average budget shares
+  prices = aids_model$pMeans   # Average prices
+)
 
-write.csv(as.data.frame(laaids_model$coef$stat), "outcome/output_1105_laaids.csv")
+write.csv(as.data.frame(laaids_model$coef$stat), "outcome/output_laaids.csv", quote = FALSE)
+write.csv(as.data.frame(laaids_elasticities$exp), "outcome/output_laaids_exp.csv", quote = FALSE)
+write.csv(as.data.frame(laaids_elasticities$marshall), "outcome/output_laaids_marshall.csv", quote = FALSE)
+write.csv(as.data.frame(laaids_elasticities$hicks), "outcome/output_laaids_hicks.csv", quote = FALSE)
 saveRDS(laaids_model, file = "outcome/laaids_model.rds")
-
+saveRDS(aids_elasticities, file = "outcome/laaids_elasticities.rds")
 
 
