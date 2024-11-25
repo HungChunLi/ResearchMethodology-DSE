@@ -1,71 +1,6 @@
  \newcommand{\noop}[1]{}
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Browning and Heinesen}{Browning and
-  Heinesen}{2012}]{Browning}
-Browning, M. and E.~Heinesen (2012).
-\newblock Effect of job loss due to plant closure on mortality and
-  hospitalization.
-\newblock {\em Journal of Health Economics\/}~{\em 31}, 599--616.
-
-\bibitem[\protect\citeauthoryear{Canavan, Gallo, and Marshall}{Canavan
-  et~al.}{2021}]{canavan2021moderating}
-Canavan, M., W.~T. Gallo, and G.~L. Marshall (2021).
-\newblock The moderating effect of social support and social integration on the
-  relationship between involuntary job loss and health.
-\newblock {\em Journal of Applied Gerontology\/}~{\em 40\/}(10), 1272--1279.
-
-\bibitem[\protect\citeauthoryear{Coope, Donovan, Wilson, Barnes, Metcalfe,
-  Hollingworth, Kapur, Hawton, and Gunnell}{Coope
-  et~al.}{2015}]{coope2015characteristics}
-Coope, C., J.~Donovan, C.~Wilson, M.~Barnes, C.~Metcalfe, W.~Hollingworth,
-  N.~Kapur, K.~Hawton, and D.~Gunnell (2015).
-\newblock Characteristics of people dying by suicide after job loss, financial
-  difficulties and other economic stressors during a period of recession
-  (2010--2011): A review of coroners' records.
-\newblock {\em Journal of Affective Disorders\/}~{\em 183}, 98--105.
-
-\bibitem[\protect\citeauthoryear{Cygan-Rehm, Kuehnle, and
-  Oberfichtner}{Cygan-Rehm et~al.}{2017}]{cygan2017bounding}
-Cygan-Rehm, K., D.~Kuehnle, and M.~Oberfichtner (2017).
-\newblock Bounding the causal effect of unemployment on mental health:
-  Nonparametric evidence from four countries.
-\newblock {\em Health Economics\/}~{\em 26\/}(12), 1844--1861.
-
-\bibitem[\protect\citeauthoryear{Eliason and Storrie}{Eliason and
-  Storrie}{2009a}]{eliason2009does}
-Eliason, M. and D.~Storrie (2009a).
-\newblock Does job loss shorten life?
-\newblock {\em Journal of Human Resources\/}~{\em 44\/}(2), 277--302.
-
-\bibitem[\protect\citeauthoryear{Eliason and Storrie}{Eliason and
-  Storrie}{2009b}]{eliason2009job}
-Eliason, M. and D.~Storrie (2009b).
-\newblock Job loss is bad for your health--swedish evidence on cause-specific
-  hospitalization following involuntary job loss.
-\newblock {\em Social science \& medicine\/}~{\em 68\/}(8), 1396--1406.
-
-\bibitem[\protect\citeauthoryear{Jacobson, LaLonde, and Sullivan}{Jacobson
-  et~al.}{1993}]{Jacobson}
-Jacobson, L.~S., R.~J. LaLonde, and D.~G. Sullivan (1993).
-\newblock Earnings losses of displaced workers.
-\newblock {\em American Economic Review\/}~{\em 83\/}(4), 685--709.
-
-\bibitem[\protect\citeauthoryear{Keefe, Reid, Ormsby, Robson, Purdie, Baxter,
-  and Incorporated}{Keefe et~al.}{2002}]{keefe2002serious}
-Keefe, V., P.~Reid, C.~Ormsby, B.~Robson, G.~Purdie, J.~Baxter, and N.~K.~I.
-  Incorporated (2002).
-\newblock Serious health events following involuntary job loss in new zealand
-  meat processing workers.
-\newblock {\em International Journal of Epidemiology\/}~{\em 31\/}(6),
-  1155--1161.
-
-\bibitem[\protect\citeauthoryear{Kuhn, Lalive, and Zweimüller}{Kuhn
-  et~al.}{2009}]{Kuhn}
-Kuhn, A., R.~Lalive, and J.~Zweimüller (2009).
-\newblock The public health costs of job loss.
-\newblock {\em Journal of Health Economics\/}~{\em 28}, 1099--1115.
-
 \bibitem[\protect\citeauthoryear{Lachowska, Mas, and Woodbury}{Lachowska
   et~al.}{2020}]{lachowska}
 Lachowska, M., A.~Mas, and S.~Woodbury (2020).
@@ -73,7 +8,7 @@ Lachowska, M., A.~Mas, and S.~Woodbury (2020).
 \newblock {\em American Economic Review\/}~{\em 110\/}(10), 3231--3266.
 
 \bibitem[\protect\citeauthoryear{Natarajan and Jayadevan}{Natarajan and
-  Jayadevan}{2022}]{Rn15}
+  Jayadevan}{2022}]{RN15}
 Natarajan, T. and G.~R. Jayadevan (2022).
 \newblock Covid-19 pandemic and the consumption behaviour of branded functional
   beverages in india: a conceptual framework.
@@ -86,36 +21,12 @@ Pokharel, K.~P. (2016).
 \newblock {\em International Journal of Social Sciences and Management\/}~{\em
   3\/}(1), 38--46.
 
-\bibitem[\protect\citeauthoryear{Ruhm}{Ruhm}{1991}]{Ruhm}
-Ruhm, C.~J. (1991).
-\newblock Are workers permanently scarred by job displacements?
-\newblock {\em American Economic Review\/}~{\em 81}, 319--324.
-
-\bibitem[\protect\citeauthoryear{Salm}{Salm}{2009}]{salm2009does}
-Salm, M. (2009).
-\newblock Does job loss cause ill health?
-\newblock {\em Health Economics\/}~{\em 18\/}(9), 1075--1089.
-
-\bibitem[\protect\citeauthoryear{Schaller and Stevens}{Schaller and
-  Stevens}{2015}]{Schaller}
-Schaller, J. and A.~H. Stevens (2015).
-\newblock Short-run effects of job loss on health conditions, health insurance,
-  and health care utilization.
-\newblock {\em Journal of Health Economics\/}~{\em 43}, 190--203.
-
 \bibitem[\protect\citeauthoryear{Schmieder, von Wachter, and Heining}{Schmieder
   et~al.}{2023}]{schmieder}
 Schmieder, J., T.~von Wachter, and J.~Heining (2023).
 \newblock The costs of job displacement over the business cycle and its
   sources: Evidence from germany.
 \newblock {\em American Economic Review\/}~{\em 113\/}(5), 1208--1254.
-
-\bibitem[\protect\citeauthoryear{Sullivan and von Wachter}{Sullivan and von
-  Wachter}{2009}]{Sullivan}
-Sullivan, D. and T.~von Wachter (2009).
-\newblock Job displacement and mortality: an analysis using administrative
-  data.
-\newblock {\em Quarterly Journal of Economics\/}~{\em 124\/}(3), 1265--1306.
 
 \bibitem[\protect\citeauthoryear{Walton and Wittekind}{Walton and
   Wittekind}{2023}]{RN3}
@@ -135,5 +46,10 @@ Zhou, P. and Y.~Z. Liu (2024).
 \newblock Promoting healthy diets through food reformulation: The demand for
   "better-for-you" beverage.
 \newblock {\em Agribusiness\/}~{\em 40\/}(3), 641--660.
+
+\bibitem[\protect\citeauthoryear{經濟部統計處}{經濟部統計處}{2024}]{moea_statistics}
+經濟部統計處 (2024).
+\newblock 經濟部統計查詢網: 工業產銷存動態調查.
+\newblock Accessed: 2024-11-19.
 
 \end{thebibliography}

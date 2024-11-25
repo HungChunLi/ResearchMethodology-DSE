@@ -1,13 +1,90 @@
 % \newpage
 
-\section*{Tables}
+\section*{表格}
 
-% \vspace*{-10cm}
+\newpage
+\begin{table}[H]
+    \caption{AIDS及LAAIDS模型估計結果與顯著性}
+    \centering
+    \begin{tabular}{cc} % 建立兩欄表格佈局
+        % 左欄上方表格
+        \begin{subtable}[t]{0.45\textwidth}
+            % \centering
+            \begin{center}
+                \caption{Alpha參數} \label{coef_alpha}
+                \input{tables/combined_coef_alpha.tex}
+                \vspace{0.5cm} % 增加表格間距
+                \caption{Beta參數} \label{coef_beta}
+                \input{tables/combined_coef_beta.tex}
+            \end{center}
+            \vspace*{1cm}
+            \begin{singlespace}
+                \begin{footnotesize}
+                    \raggedright % 讓以下文字靠左對齊
+                    \noindent {\it Notes:} 此表展示 AIDS 模型中各項參數的估計值及其顯著性檢驗結果。如 alpha 1 的估計值為 1.237，表明該參數對模型中需求分配的影響為正，且數值較大，標準誤為 0.085，顯示估計結果穩定。所有參數的 p 值均遠小於 0.05，表示這些參數在統計上顯著，同時也可看到 AIDS 模型在解釋台灣飲料市場需求方面具有良好表現。
+                \end{footnotesize}
+            \end{singlespace}
+        \end{subtable} &
+
+        % 右欄表格
+        \begin{subtable}[t]{0.45\textwidth}
+            \centering
+            \footnotesize
+            \caption{AIDS及LAAIDS模型估計結果與顯著性} \label{coef_gamma}
+            \input{tables/combined_coef_gamma.tex}
+        \end{subtable} \\ % 換行分隔上下表格
+    \end{tabular}
+\end{table}
+
+
+% \begin{table}[H]
+%     \caption{AIDS模型估計結果與顯著性} \label{aids_coef}
+%     \center
+%     \input{tables/aids_coef.tex}
+% \end{table}
+% \vspace{-2em}
+% \begin{singlespace}
+%     \begin{footnotesize}
+%     \noindent {\it Notes:} 此表展示 AIDS 模型中各項參數的估計值及其顯著性檢驗結果。如 alpha 1 的估計值為 1.237，表明該參數對模型中需求分配的影響為正，且數值較大，標準誤為 0.085，顯示估計結果穩定。所有參數的 p 值均遠小於 0.05，表示這些參數在統計上顯著，同時也可看到 AIDS 模型在解釋台灣飲料市場需求方面具有良好表現。
+%     \end{footnotesize}
+% \end{singlespace}
+
+% \begin{table}[H]
+%     \caption{LA/AIDS模型估計結果與顯著性} \label{laaids_coef}
+%     \center
+%     \input{tables/laaids_coef.tex}
+% \end{table}
+% % \begin{singlespace}
+% %     \begin{footnotesize}
+% %     \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
+% %     *** significant at the 1 percent level, ** significant at the 5 percent level, and * significant at the 10 percent level.
+% %     \end{footnotesize}
+% % \end{singlespace}
+% \vspace{-2em}
+% \begin{singlespace}
+%     \begin{footnotesize}
+%         \raggedright
+%         \noindent {\it Notes:} 此表展示 AIDS 模型中各項參數的估計值及其顯著性檢驗結果。如 alpha 1 的估計值為 1.237，表明該參數對模型中需求分配的影響為正，且數值較大，標準誤為 0.085，顯示估計結果穩定。所有參數的 p 值均遠小於 0.05，表示這些參數在統計上顯著，同時也可看到AIDS 模型在解釋台灣飲料市場需求方面具有良好表現。
+%     \end{footnotesize}
+% \end{singlespace}
 
 \begin{table}[H]
-    \caption{123}
+    \caption{AIDS模型支出彈性估計結果} \label{aids_exp}
     \center
-    \input{tables/aids_coef.tex}
+    \input{tables/aids_exp.tex}
+\end{table}
+\vspace{-2em}
+\begin{singlespace}
+    \begin{footnotesize}
+        \raggedright
+        \noindent {\it Notes:} 此表格顯示五種飲料類型的支出彈性 (Expenditure Elasticities)，反映了消費者對於總支出變化的敏感度。正彈性值代表需求量隨總支出增加而增加，例如運動飲料份額的支出彈性為 1.412，表示當總支出增加 1\% 時，運動飲料的需求增加約 1.41\%。負彈性值若存在，則表示總支出增加反而減少該商品的需求。此表中大多數彈性值大於 1，意味著台灣消費者對飲料類別的需求相對敏感，特別是運動飲料和茶飲。
+    \end{footnotesize}
+\end{singlespace}
+
+\begin{table}[H]
+    \caption{LA/AIDS模型支出彈性估計結果} \label{laaids_exp}
+    \center
+    \input{tables/laaids_exp.tex}
 \end{table}
 \vspace{-2em}
 \begin{singlespace}
@@ -18,59 +95,25 @@
 \end{singlespace}
 
 \begin{table}[H]
-    \caption{123}
+    \caption{AIDS模型 Marshallian 需求彈性估計結果}
     \center
-    \input{tables/laaids_coef.tex}
+    \input{tables/aids_marshall.tex}  \label{aids_marshall}
 \end{table}
+\vspace{-2em}
 \begin{singlespace}
     \begin{footnotesize}
-    \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
-    *** significant at the 1 percent level, ** significant at the 5 percent level, and * significant at the 10 percent level.
+        \raggedright
+        \noindent {\it Notes:} 此表展示 AIDS 模型中各項參數的估計值及其顯著性檢驗結果。如 alpha 1 的估計值為 1.237，表明該參數對模型中需求分配的影響為正，且數值較大，標準誤為 0.085，顯示估計結果穩定。所有參數的 p 值均遠小於 0.05，表示這些參數在統計上顯著，同時也可看到AIDS 模型在解釋台灣飲料市場需求方面具有良好表現。 
     \end{footnotesize}
 \end{singlespace}
 
 \begin{table}[H]
-    \caption{123}
+    \caption{LAAIDS模型 Marshallian 需求彈性估計結果}
     \center
-    \input{tables/aids_exp.tex}
-\end{table}
-\begin{singlespace}
-    \begin{footnotesize}
-    \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
-    *** significant at the 1 percent level, ** significant at the 5 percent level, and * significant at the 10 percent level.
-    \end{footnotesize}
-\end{singlespace}
-
-\begin{table}[H]
-    \caption{123}
-    \center
-    \input{tables/laaids_exp.tex}
-\end{table}
-\begin{singlespace}
-    \begin{footnotesize}
-    \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
-    *** significant at the 1 percent level, ** significant at the 5 percent level, and * significant at the 10 percent level.
-    \end{footnotesize}
-\end{singlespace}
-
-\begin{table}[H]
-    \caption{123}
-    \center
-    \input{tables/aids_marshall.tex}
-\end{table}
-\begin{singlespace}
-    \begin{footnotesize}
-    \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
-    *** significant at the 1 percent level, ** significant at the 5 percent level, and * significant at the 10 percent level.
-    \end{footnotesize}
-\end{singlespace}
-
-\begin{table}[H]
-    \caption{123}
-    \center
-    \input{tables/laaids_marshall.tex}
+    \input{tables/laaids_marshall.tex}  \label{laaids_marshall}
     % \note
 \end{table}
+\vspace{-2em}
 \begin{singlespace}
     \begin{footnotesize}
     \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
@@ -79,22 +122,24 @@
 \end{singlespace}
 
 \begin{table}[H]
-    \caption{123}
+    \caption{AIDS模型 Hicksian 需求彈性估計結果}
     \center
     \input{tables/aids_hicks.tex}
 \end{table}
+\vspace{-2em}
 \begin{singlespace}
     \begin{footnotesize}
-    \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\
-    *** significant at the 1 percent level, ** significant at the 5 percent level, and * significant at the 10 percent level.
+        \raggedright
+        \noindent {\it Notes:} 此表根據未補償需求 (Uncompensated Demand) 計算馬歇爾需求彈性，反映價格變動對需求的影響，並考慮了收入效應。自價格彈性：如果蔬汁的自價格彈性為 -0.452，顯示價格每上升 1\%，需求減少 0.452\%。該值大於希克斯彈性，因為馬歇爾彈性包含收入效應。交叉價格彈性：例如果蔬汁對茶飲的交叉價格彈性為 0.215，說明兩者之間的替代效應較低。相比希克斯彈性，馬歇爾彈性對政策制定更為重要，因為它包含了市場中實際的收入和價格變動對需求的綜合影響。
     \end{footnotesize}
 \end{singlespace}
 
 \begin{table}[H]
-    \caption{123}
+    \caption{LAAIDS模型 Hicksian 需求彈性估計結果}
     \center
     \input{tables/laaids_hicks.tex}
 \end{table}
+\vspace{-2em}
 \begin{singlespace}
     \begin{footnotesize}
     \noindent {\it Notes:} Standard deviations in parentheses, and standard errors in brackets. The treatment group comprises workers who underwent a mass layoff (firm reducing its employment by over 90\%), and the comparison group comprises workers who were employed at a stable firm (no more than a 30\% employment decrease) and had continuous employment during the sample period. All dollars are adjusted with CPI and displayed in 2016 NT\$ (1 NT\$ ≈ 0.033 US\$). The cumulative number of outpatient visits and cumulative medical expenses of mental illness are accumulated from the fifth to second years prior to the (pseudo) displacement. The statistics in the {\it After Matching} columns are weighted by entropy balancing (EB). The variables included in the matching process are all variables in the {\it Individual Characteristics} and {\it Firm Characteristics} panel. \\

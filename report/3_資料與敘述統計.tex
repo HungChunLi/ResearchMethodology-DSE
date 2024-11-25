@@ -18,8 +18,25 @@
 % $Y_{it}$ is the outcome of interest for worker $i$ in year $t$: 1) Employment (a dummy indicating working for at least one month per year or not); 2) Annual earnings; 3) Cumulative number of visits for mental illness; 4) Cumulative medical expenses of mental illness (including both outpatient and inpatient care).   $Disp_{i}$ indicates whether worker $i$ is a displaced worker. $I(t=c+k)$ is a dummy variable indicating $k$ years after (pseudo) mass layoff year, $c$, where $k$ does not include $-2$ since we consider two years prior to a job loss as the reference year.\footnote{For the comparison group, the pseudo mass layoff year is the year we use to confirm the firm did {\it not} go through a mass layoff and remain no more than 30\% reduction in the firm size.)} $\gamma_{k}$ represents the evolution of outcomes among non-displaced workers. $\delta_{k}$ is the coefficient of interest, which measures the change in outcomes among displaced workers with respect to the reference year ($k=-2$), relative to the change of non-displaced workers. We additionally control individual fixed effects ($\alpha_i$) and calendar year fixed effects ($\pi_t$). $X_{it}$ are other controls, mainly quartic function of worker's age and county/municipality level unemployment rate.
 
 \section{資料蒐集與處理}
+
 \subsection{資料蒐集}
-本研究使用的資料主要來自於「經濟部工業產銷存動態調查資料庫」，涵蓋5種飲料類別（果蔬汁飲料、碳酸飲料、運動飲料、咖啡飲料及茶類飲料）的銷售量與銷售值的月資料，詳細記錄了每種飲料的市場表現。此外，另一部分資料來自於「勞動部勞動統計查詢網」的國民所得月度統計資料，用以反映消費者的收入水準。所有資料的涵蓋期間為1982年至2024年，共收集到547筆月統計資料，確保了樣本的時間跨度。這些數據不僅提供了每類飲料的銷售量和銷售值，也包含了與消費行為密切相關的消費者所得，為後續的DSE（Demand System Estimation）分析提供了關鍵依據。
+
+本研究使用的資料主要來自於「經濟部工業產銷存動態調查資料庫」\citep{moea_statistics}，涵蓋5種飲料類別（果蔬汁飲料\footnote{含天然果汁/蔬菜汁或還原果汁/蔬菜汁10\%以上，直接供飲用之果汁/蔬菜汁飲料。
+}、碳酸飲料\footnote{在除去鹵素飲用水中加壓，添加二氧化碳及果實香料、果汁；或可樂子實葉抽出液；或Saraparilla根抽出液等調味料之碳酸飲料。
+}、運動飲料\footnote{具可調解人體電解質功能之飲料，調整為等張滲透壓，以便自人體腸道迅速吸收，PH值在2.5～3.8之間，電解質濃度(ug/ml)則分別為鈉離子552以下、鎂離子24以下、鉀離子195以下、氯離子639以下、鈣離子60以下、磷酸根離子190以下。
+}、咖啡飲料\footnote{利用咖啡粉或咖啡豆研磨、浸泡、萃取、調理，添加奶精、糖水或調味料之飲料，其咖啡因若超過200ppm則需標示，但不得超過500ppm。
+}及茶類飲料\footnote{利用茶葉或茶葉梗浸泡、萃取、調理，添加糖水或調味料之飲料，其咖啡因若超過200ppm則需標示，但不得超過500ppm。
+}）的銷售量與銷售值的月資料，詳細記錄了每種飲料的市場表現。
+% 此外，另一部分資料來自於「勞動部勞動統計查詢網」的國民所得月度統計資料，用以反映消費者的收入水準。
+所有資料的涵蓋期間為1982年至2024年，共收集到547筆月統計資料，確保了樣本的時間跨度，
+% 這些數據不僅提供了每類飲料的銷售量和銷售值，也包含了與消費行為密切相關的消費者所得，
+為後續的DSE（Demand System Estimation）分析提供了關鍵依據。
 
 \subsection{資料處理}
+
 在完成資料蒐集後，我們按步驟進行了資料處理，目的是提高數據的可靠性與一致性。首先，我們使用 R 統計軟體對資料進行清理，包括合併不同來源的數據、去除重複資料、以及處理遺漏值等工作。對於部分遺漏值，考量到補值可能帶來的偏誤，我們選擇將無法合理填補的觀察值移除。此外，由於不同飲料類別的統計起始時間不一致，我們將分析的起始時間進行統一，確保資料具有可比性。為了進一步豐富研究變數，我們還根據銷售量與銷售值兩個變數計算並新增了每種飲料的單位價格，為我們後續使用模型估計去衡量價格對消費者需求的影響提供了必要的解釋變數。
+
+\subsection{敘述統計}
+
+
+\subsection{}

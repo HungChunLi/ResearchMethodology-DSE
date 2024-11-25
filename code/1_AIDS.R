@@ -19,16 +19,16 @@ if (user == "brianhjli"){
   setwd("C:/Users/QQ/Dropbox/DSE-5")
 } else if (user == "hayashijikyou"){
   setwd("/Users/hayashijikyou/Library/CloudStorage/Dropbox/DSE-5")
+} else if (user == "11097"){
+  setwd("C:/Users/11097/Dropbox/DSE-5")
 } else {
   warning("使用者名稱為空，請檢查檔案路徑！")
 }
 
 # 讀取資料
-data <- fread("data/fullData.csv")
-data <- as.data.table(lapply(data, function(col) as.numeric(as.character(col))))
-data <- subset(data, year >= 1991)
-data <- subset(data, year < 2024)
-data <- data[!is.na(data$month), ]  # 刪除 month 為 NA 的行
+# data <- fread("data/fullData.csv")
+data <- fread("data/DSE-5.csv")
+
 # 確認資料框中有年份欄位
 if (!"year" %in% names(data)) {
   stop("資料中缺少年份 (year) 欄位")
@@ -47,9 +47,9 @@ valueCols <- c("FruitVegetableJuice_value", "CarbonatedBeverage_value",
 # 設定需求數量（需求份額）欄位
 shareCols <- c("FruitVegetableJuice_share", "CarbonatedBeverage_share", 
                   "SportsDrink_share", "CoffeeDrink_share", "TeaDrink_share")
-# 設定總所得欄位
-incomeCols <- c("total_value", "AvgHouseholdDisposableIncome", "LowestQuintileIncome", "SecondLowestQuintileIncome", 
-                "MiddleQuintileIncome", "SecondHighestQuintileIncome", "HighestQuintileIncome")
+# # 設定總所得欄位
+# incomeCols <- c("total_value", "AvgHouseholdDisposableIncome", "LowestQuintileIncome", "SecondLowestQuintileIncome",
+#                 "MiddleQuintileIncome", "SecondHighestQuintileIncome", "HighestQuintileIncome")
 
 #計算total volue
 data$total_value <- rowSums(data[, ..valueCols])

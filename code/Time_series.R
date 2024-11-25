@@ -1,8 +1,22 @@
+user <- Sys.info()["user"]
+
+if (user == "brianhjli") {
+  setwd("/Users/brianhjli/Dropbox/113-1/Research Methodology/DSE-5")
+} else if (user == "QQ") {
+  setwd("C:/Users/QQ/Dropbox/DSE-5")
+} else if (user == "hayashijikyou") {
+  setwd("/Users/hayashijikyou/Library/CloudStorage/Dropbox/DSE-5")
+} else {
+  warning("使用者名稱未匹配，請檢查檔案路徑！")
+}
+
+
+
 install.packages("readr")
 
 library(readr)
 
-data <- read_csv("C:/Users/QQ/Dropbox/DSE-5/data/fullData.csv")
+data <- read_csv("data/DSE-5.csv")
 
 install.packages("tseries")
 library(tseries)
