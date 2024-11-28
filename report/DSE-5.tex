@@ -83,8 +83,36 @@
 \renewcommand{\tablename}{表}
 \renewcommand{\figurename}{圖}
 \renewcommand{\abstractname}{摘要} % 手動修改摘要標題
+\renewcommand{\refname}{參考文獻}
+\newenvironment{keywords}{
+    \small % 字體大小
+	\center
+    \noindent\textbf{關鍵字}\par % 標題樣式
+    \vspace{-1ex} % 與正文間距
+}{\par\vspace{2ex}}
 
-% https://github.com/HungChunLi/ResearchMethodology-DSE
+
+% \newenvironment{keypoints}{
+%     \small % 字體大小
+%     \noindent\parbox{\textwidth}{ % 限制寬度為正文寬度
+%         \noindent\textbf{文章重點：}\par % 手動設置標題
+%         \vspace{1ex} % 與正文間距
+%     }
+% }{\par\vspace{2ex}}
+% \newenvironment{keypoints}{
+% 	\begin{abstract} % 使用摘要環境來模仿寬度
+% 		\noindent\textbf{文章重點：}\par % 標題樣式
+% 		\vspace{1ex}
+% 	}{
+% 	\end{abstract}
+% }
+%     \small % 字體大小
+%     \noindent\parbox{\linewidth}{ % 限制寬度為頁面正文寬度
+%         \noindent\center\textbf{文章重點}\par % 標題樣式
+%         \vspace{1ex} % 與正文間距
+%     }
+% }{\par\vspace{2ex}}
+
 
 \usepackage{tabularx}
 
@@ -96,24 +124,24 @@
 	
 	\title{\Large 初探台灣飲料市場需求體系}
 	
-	\author{\normalsize 黎宏濬\thanks{National Taiwan University, Email: r11627065@ntu.edu.tw}, 張立宏\thanks{National Taiwan University, Email: r11627065@ntu.edu.tw.},  林孝儒\thanks{National Taiwan University, Email: r11627065@ntu.edu.tw.},  許震浩\thanks{National Taiwan University, Email: r12323052@ntu.edu.tw.} \medskip}
+	\author{\normalsize 
+		黎宏濬, 
+		張立宏,  
+		林孝儒,  
+		許震浩\thanks{四位作者依序為國立台灣大學農業經濟學系碩士班二年級, Email: r11627065@ntu.edu.tw; 國立台灣大學農業經濟學系碩士班二年級, Email: r11627026@ntu.edu.tw; 國立台灣大學農業經濟學系碩士班二年級, Email: r11627019@ntu.edu.tw; 國立台灣大學農業經濟學系碩士班一年級, Email: r12323052@ntu.edu.tw.} \medskip}
 	%{\normalsize \textbf{Job Market Paper 2}}}
 	
+	\date{2024/11/29} % 手動設置日期
 	
 	\maketitle
-	
-\begin{abstract}
-This paper investigates the long-term effects of job displacement on earnings and mental health using administrative health claims data from Taiwan. Focusing on job loss resulting from mass layoffs, our estimates suggest a displaced worker experienced a 40\% decline in employment rates and a 67\% earning loss in the year following a layoff. Even after ten years, employment and earnings do not fully recover. Displaced workers also experience a deterioration in mental health, particularly related to stress, with a 16\% increase in outpatient visits for mental health issues and a 57\% increase in medical costs for mental illness. The negative impact on mental health is more pronounced among workers with lower earnings, men, and older individuals.
-	
-\end{abstract}
 
+
+\input{0_摘要.tex}
 
 \newpage
 
-
-
-
 %https://conversableeconomist.blogspot.com/2020/02/writing-intro-to-your-economics.html
+
 \input{1_前言.tex}
 
 \input{2_文獻回顧.tex}
@@ -124,14 +152,9 @@ This paper investigates the long-term effects of job displacement on earnings an
 
 \input{5_研究結果.tex}
 
-\subsection{}
-We discuss a number of robustness checks for our main findings in Online Appendix \ref{dis_robust}, including different matching techniques, different estimation methods, and different choices of samples. In general, our main results are robust to these changes. Moreover, we conduct a set of subgroup analyses and discuss these results in the Online Appendix \ref{dis_hetero}. To sum up, our analysis suggests that the negative effect of job displacement on mental health appears to be more pronounced among lower-income workers, men, and older individuals.
+\input{6_穩健性分析.tex}
 
-\section{結論}\label{conclusion}
-
-地區的限制性 Using Taiwan's administrative data, we examined the effects of job displacement on employment, earnings, and mental health. Due to the mandatory and generous nature of Taiwan's NHI, our study are less likely to suffer from sample attrition and to be confounded with changes in health insurance enrollment. On the other hand, the comprehensive NHI data allows us to explore the impact of displacement on both outpatient and inpatient healthcare use.
-
-
+\input{7_結論.tex}
 
 \include{c_references}
 

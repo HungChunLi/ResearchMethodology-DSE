@@ -1,0 +1,57 @@
+user <- Sys.info()["user"]
+if (user == "brianhjli") {
+setwd("/Users/brianhjli/Dropbox/113-1/Research Methodology/DSE-5")
+} else if (user == "QQ") {
+setwd("C:/Users/QQ/Dropbox/DSE-5")
+} else if (user == "hayashijikyou") {
+setwd("/Users/hayashijikyou/Library/CloudStorage/Dropbox/DSE-5")
+} else {
+warning("使用者名稱未匹配，請檢查檔案路徑！")
+}
+install.packages("readr")
+install.packages("dplyr")
+install.packages("kableExtra")
+# 載入套件
+library(readr)
+library(dplyr)
+library(tidyr)
+library(kableExtra)
+data <- read.csv("data/DSE-5.csv)
+data <- read.csv("data/DSE-5.csv")
+data <- read.csv("data\DSE-5.csv")
+data <- read.csv("data/DSE-5.csv")
+filtered_data <- data %>% select(-year, -month)
+# 計算敘述統計
+descriptive_stats <- filtered_data %>%
+summarise(
+Count = sapply(filtered_data, function(x) sum(!is.na(x))),
+Mean = sapply(filtered_data, function(x) mean(x, na.rm = TRUE)),
+Std_Dev = sapply(filtered_data, function(x) sd(x, na.rm = TRUE)),
+Min = sapply(filtered_data, function(x) min(x, na.rm = TRUE)),
+`25th_Percentile` = sapply(filtered_data, function(x) quantile(x, 0.25, na.rm = TRUE)),
+Median = sapply(filtered_data, function(x) median(x, na.rm = TRUE)),
+`75th_Percentile` = sapply(filtered_data, function(x) quantile(x, 0.75, na.rm = TRUE)),
+Max = sapply(filtered_data, function(x) max(x, na.rm = TRUE))
+) %>%
+as.data.frame()
+# 轉置數據框使其易於閱讀
+descriptive_stats_t <- t(descriptive_stats)
+colnames(descriptive_stats_t) <- names(filtered_data)
+# 輸出結果
+print(as.data.frame(descriptive_stats_t))
+View(descriptive_stats)
+write.csv(
+as.data.frame(descriptive_stats_t),
+"outcome/敘述統計表格.csv",
+row.names = TRUE
+)
+write.csv(
+as.data.frame(descriptive_stats),
+"outcome/敘述統計表格.csv",
+row.names = TRUE
+)
+write.csv(
+as.data.frame(descriptive_stats_t),
+"outcome/敘述統計表格.csv",
+row.names = TRUE
+)

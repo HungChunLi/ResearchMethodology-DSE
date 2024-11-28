@@ -101,22 +101,30 @@ xt <- xtable(combined_df_gamma)
 align(xt) <- c("l", "l", "l", "l")
 print(xt, file = "report/tables/combined_coef_gamma.tex", floating = FALSE, include.rownames = FALSE)
 
-aids_exp <- aids_elasticities$exp %>% t() %>% as.data.frame()
+
+aids_exp <- aids_elasticities$exp %>% as.data.frame()
 setnames(aids_exp, new = share_new)
-rownames(aids_exp) <- "支出彈性"
+# colnames(aids_exp) <- "(1)"
 print(aids_exp)
-xt <- xtable(aids_exp)
-align(xt) <- c("c", "c", "c", "c", "c", "c")
-print(xt, file = "report/tables/aids_exp.tex", floating = FALSE)
-
-laaids_exp <- laaids_elasticities$exp %>% t() %>% as.data.frame()
+# xt <- xtable(aids_exp)
+# align(xt) <- c("c", "c", "c", "c", "c", "c")
+# print(xt, file = "report/tables/aids_exp.tex", floating = FALSE)
+laaids_exp <- laaids_elasticities$exp %>% as.data.frame()
 setnames(laaids_exp, new = share_new)
-rownames(laaids_exp) <- "支出彈性"
+# rownames(laaids_exp) <- "(2)"
 print(laaids_exp)
-xt <- xtable(laaids_exp)
-align(xt) <- c("c", "c", "c", "c", "c", "c")
-print(xt, file = "report/tables/laaids_exp.tex", floating = FALSE)
-
+# xt <- xtable(laaids_exp)
+# align(xt) <- c("c", "c", "c", "c", "c", "c")
+# print(xt, file = "report/tables/laaids_exp.tex", floating = FALSE)
+combined_df <- cbind(aids_exp, laaids_exp)
+combined_df$Variable <- rownames(combined_df)
+rownames(combined_df) <- NULL
+colnames(combined_df) <- c("(1)", "(2)", "變數")
+combined_df <- combined_df %>% select(c("變數", "(1)", "(2)"))
+print(combined_df)
+xt <- xtable(combined_df)
+align(xt) <- c("c", "c", "c")
+print(xt, file = "report/tables/combined_exp.tex", floating = FALSE)
 
 aids_marshall <- as.data.frame(aids_elasticities$marshall)
 setnames(aids_marshall, old = price_old, new = price_new)

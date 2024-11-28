@@ -1,10 +1,37 @@
-\section{研究結果}\label{dis_labor_health}
 
-igure \ref{eventstudy} presents our estimated dynamic effects of displaceme
+\section{AIDS及LAAIDS模型參數估計結果}
 
-\subsection{使用AIDS模型分析}
-Figures \ref{emp_e} and \ref{earnings} show that the employment and annual earnings decline sharply in the year following displacement and recover limitedly ten years after displacement. Specifically, we note approximately a 30\% decrease in the probability of employment and a 40\% reduction in the annual earnings, ten years after the year of displacement. Consistent with graphical evidence on labor market outcomes, Figure \ref{mental} suggests that compared to the control group, displaced workers had higher utilization of medical services due to mental illness. Importantly, prior to layoff, these outcomes of the displaced workers align closely with those of the non-displaced counterparts, suggesting that their post-displacement differences are not driven by differential pre-trends between treatment and control groups. 
+% \subsection{係數解釋}
 
-\subsection{使用LAAIDS模型分析}\label{dis_labor}
+% 表 \ref{coef} 記錄了AIDS與 LAAIDS模型的估計結果，其探討了果蔬汁、碳酸飲料、運動飲料、咖啡飲料及茶飲料的需求特徵。
+% \texttt{alpha} 係數反映了收入不變時，各飲料的基礎需求水準。兩模型的結果一致指出，果蔬汁和咖啡飲料擁有較高的基礎需求。在AIDS 模型及LAAIDS 模型中，果蔬汁的\texttt{alpha 1}估計值分別為 1.24和 1.16；咖啡飲料的\texttt{alpha 4}估計值則為 0.69和 0.76，顯示這兩類飲料對消費者來說是穩定的日常選擇，特別是果蔬汁的健康屬性和咖啡飲料的功能性使其市場地位穩固。相較之下，碳酸飲料的基礎需求偏低，\texttt{alpha 2} 值分別為 0.54和 0.42，顯示健康意識的提升對其需求造成了一定影響，運動飲料的需求基礎有限，\texttt{alpha 3}值在兩模型中均為負(-0.30 和 -0.27)，說明其消費群體較為特定，需求具有較高彈性。而茶飲料的\texttt{alpha 5}值為-1.17 和 -1.07，反映其基礎需求在市場中相對最低。
 
-Figure \ref{eventstudy} presents our estimated dynamic effects of displacement on earnings and employment from model (\ref{event}). Before the reference year (two years before displacement), earnings for workers who will be displaced and non-displaced workers follow a similar trend. In the year prior to displacement, there was a significant decline in earnings by roughly 2,000 NTD, economically small compared to previous years.\footnote{\citet{lachowska} and \citet{schmieder} also found a significant earning loss prior to displacement using data from the U.S. and Germany.} Annual earnings for displaced workers drop by around 270,000 NTD in the year of displacement and 340,000 NTD in the year following displacement (about 67\%). While there is a small recovery in annual earnings two years after displacement, a substantial long-term effect is still visible ten years after a mass layoff. Similarly, Figure \ref{eventstudy} (a) shows the probability of employment mirrors the earnings trend, with a sharp initial decline (about 40\%) in the year after displacement and a partial recovery thereafter. After ten years, the employment probability remains nearly 30\% lower than before the displacement. 
+% beta 係數衡量總支出變化對需求的影響。\texttt{beta 1}(果蔬汁)的 beta 值在兩模型中均為負，顯示總支出增加時其需求略有下降，可能因為消費者轉向更高端飲品如運動飲料和茶飲料。\texttt{beta 3}(運動飲料)的值在兩模型中均為顯著正值，表明其需求隨總支出上升而增加。同樣，\texttt{beta 5}(茶飲料)的 beta 值亦為正，顯示總支出增加會促進需求增長，強化了其作為正常財的特性。\texttt{beta 2}(碳酸飲料)的值雖接近顯著性，但在兩模型中呈現出正值，表明總支出對其需求影響有限但可能略有促進。而\texttt{beta 4}(咖啡飲料)的值為負，顯示其需求會隨總支出提升而減少。
+
+% gamma 係數揭示了飲料間的替代與互補關係。兩模型均表明，\texttt{gamma 5 4}(茶飲料與咖啡飲料)之間的替代效應較弱，當茶價格上升時，咖啡需求也會減少(gamma 值為負)，可能反映了兩者目標消費群體的差異。\texttt{gamma 2 5}(碳酸飲料與茶飲料)之間的替代性較強，當茶價格上升時，碳酸飲料需求增加，表明碳酸飲料是茶的重要替代品。此外，果蔬汁與其他飲料的 gamma 值表現出一定的互補性。
+
+
+\subsection{支出彈性}
+
+表 \ref{exp} 記錄了 AIDS 和 LAAIDS 模型的支出彈性結果，探討果蔬汁、碳酸飲料、運動飲料、咖啡飲料及茶飲料在台灣市場的需求在面對總支出變動時的敏感性。
+
+運動飲料在AIDS 模型和LAAIDS 模型中的支出彈性分別為 1.41與 1.38，為所有飲料類型中最高，顯示其需求對總支出變動極為敏感。茶飲料的支出彈性分別為 1.34與 1.32，隨著總支出的提升，茶飲料需求大幅增長。果蔬汁的支出彈性在兩模型中分別為 0.52和 0.55，顯示其需求對總支出變動不敏感，這表明果蔬汁的消費穩定，即使總支出波動，其需求變化幅度也較小。咖啡飲料的支出彈性在兩模型中分別為 0.54與 0.50，標示消費者對咖啡飲料的需求穩定。碳酸飲料的支出彈性在兩模型中分為 0.85與 0.91，接近 1，顯示其需求隨總支出的變化呈接近比例的增長。
+
+
+\subsection{Marshallian 需求彈性}
+
+Marshallian 需求函數又稱為未補償需求函數(uncompensated demand function)，描述的是在給定收入和價格條件下，消費者如何選擇商品組合以最大化效用，其考慮了包含收入在內的所有外生因素，因此顯示各飲料需求對於價格變動的總反應。從表 \ref{aids_marshall}和表\ref{laaids_marshall}可以看出對各種商品估計的 Marshallian 需求彈性，揭示其對自身與其他飲料價格變動的敏感性及市場定位。
+
+果蔬汁在 AIDS 模型及 LAAIDS 模型中的自價格彈性分別為 -0.45 及 -0.04，顯示其需求穩定，碳酸飲料自價格彈性分別為 -0.59 及 -0.51 ，表明需求對價格波動較敏感，健康意識提升可能進一步影響其市場。運動飲料自價格彈性為 -0.27 及 -0.66 ，反映其需求在健康飲品市場中對價格有所敏感。咖啡飲料的自價格彈性為 0.37 及 0.84 ，可能反映品牌價值帶來的特殊消費行為。茶飲料自價格彈性在兩模型中分別為 -0.06  及 -0.35 ，顯示其需求對價格變動影響最小，具有高度穩定性。
+
+在交叉價格彈性中，果蔬汁與碳酸飲料需求表現出一定的互補性，在 AIDS 模型及 LAAIDS 模型中分別為 -0.50 及 -0.42；而果蔬汁與運動飲料之間則顯示出顯著的替代效應，在兩模型中分別為 0.84 及 1.47。咖啡飲料與茶飲料之間的互補效應在兩模型中均顯著，在兩模型中分別為-1.82 及 -2.60，當茶價格上升時，咖啡需求顯著下降，顯示兩者在功能性消費中具有緊密聯動。
+
+
+\subsection{Hicksian 需求彈性}
+
+Hicksian 需求函數又稱為受補償需求函數(compensated demand function)，描述的是在給定效用水準下，消費者如何選擇商品組合以最小化支出。在 Hicksian 需求中，需求彈性消除了收入效果，只考慮了替代效果。從表\ref{aids_hicks}和表\ref{aids_hicks}中可以看到 AIDS 和 LAAIDS 模型對各商品 Hicksian 需求彈性的估計結果。
+
+在 AIDS 和 LAAIDS 模型中，碳酸飲料和運動飲料均表現出極高的需求彈性，碳酸飲料的自彈性分別為 -1.398 和 -1.466，而運動飲料的自彈性則為 -1.463 和 -1.307。這些數據顯示，這兩類飲料的需求對價格變動非常敏感，價格上升 1\% 會導致其支出占比顯著下降，表示消費者在價格波動時極易轉向其他替代商品。在 AIDS 模型中，果菜汁的價格彈性為 -0.354，而在 LAAIDS 模型中則為 0.069，表示果菜汁的需求對價格的敏感性相對較低。
+
+茶飲料與碳酸飲料之間的替代效應最為強烈，當茶飲料價格上升 1\% 時，碳酸飲料的支出占比在 AIDS 模型中增加了 1.909，而在 LAAIDS 模型中增加了 1.806。同樣，茶飲料與運動飲料之間的替代效應也非常顯著，茶飲料價格每上升 1\%，運動飲料的支出占比增加 1.449 至 2.058。互補效應則在茶飲料與咖啡飲料之間顯得尤為顯著，當茶飲料價格上升 1\% 時，咖啡飲料的支出占比下降了 1.594 至 2.389，這表明消費者經常會同時購買這兩種飲料。
+

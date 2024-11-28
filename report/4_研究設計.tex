@@ -1,8 +1,8 @@
 \section{研究設計}
 
-本文分別採用 AIDS (Almost Ideal Demand System)和 LA/AIDS (Linear Approximate AIDS) 兩種需求系統模型進行分析。
+本文分別採用 AIDS (Almost Ideal Demand System)和 LAAIDS(Linear Approximate AIDS) 兩種需求系統模型進行分析。
 兩種方法皆用於分析多個商品的需求及其需求彈性，主要差別在於價格指數的處理方式，。
-以下兩節將分別敘述 AIDS 及 LA/AIDS 的模型架構。
+以下兩節將分別敘述 AIDS 及 LAAIDS的模型架構。
 
 \subsection*{需求函數}
  模型中各商品的的需求函數為：
@@ -28,7 +28,7 @@ w_i = \frac{P_i Q_i}{X}.
 \ln(P) = \alpha_0 + \sum_{j=1}^{5} \alpha_j \ln(P_j) + \frac{1}{2} \sum_{j=1}^{5} \sum_{k=1}^{5} \gamma_{jk} \ln(P_j) \ln(P_k),
 \end{equation}
 其中，\(\alpha_0\) 是基準常數，用於表示價格指數的基本水平；\(\alpha_j\) 是第 \(j\) 類飲料價格的影響係數；\(\gamma_{jk}\) 是第 \(j\) 和第 \(k\) 類飲料價格的交叉效應，用於衡量價格互動對需求的影響。
-由於價格指數 \(P\) 的非線性形式較難直接處理，在 LA/AIDS 模型中，通常會選擇線性近似方法來簡化價格指數的計算，例如使用 Stone 指數：
+由於價格指數 \(P\) 的非線性形式較難直接處理，在 LAAIDS模型中，通常會選擇線性近似方法來簡化價格指數的計算，例如使用 Stone 指數：
 \begin{equation}
 	\ln(P) \approx \ln(P) = \sum_{j=1}^{5} w_j \ln(P_j).
 \end{equation}
