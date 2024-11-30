@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DSE-5.aux
+A level-1 auxiliary file: c_references.aux
+The style file: chicago.bst
+A level-1 auxiliary file: a_tables.aux
+A level-1 auxiliary file: b_figures.aux
+Database file #1: DSE_citation.bib
+Warning--I didn't find a database entry for "twtrend2022beverage"
+Warning--page numbers missing in RN3
+Warning--page numbers missing in RN1
+You've used 7 entries,
+            2861 wiz_defined-function locations,
+            663 strings with 5928 characters,
+and the built_in function-call counts, 4292 in all, are:
+= -- 371
+> -- 286
+< -- 0
++ -- 82
+- -- 110
+* -- 350
+:= -- 806
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 46
+chr.to.int$ -- 7
+cite$ -- 9
+duplicate$ -- 118
+empty$ -- 263
+format.name$ -- 126
+if$ -- 776
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 5
+newline$ -- 38
+num.names$ -- 70
+pop$ -- 28
+preamble$ -- 2
+purify$ -- 88
+quote$ -- 0
+skip$ -- 139
+stack$ -- 0
+substring$ -- 197
+swap$ -- 40
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 140
+warning$ -- 2
+while$ -- 73
+width$ -- 0
+write$ -- 92
+(There were 3 warnings)

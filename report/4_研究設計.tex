@@ -14,12 +14,10 @@ w_i = \alpha_i + \sum_{j=1}^{5} \gamma_{ij} \ln(P_j) + \beta_i \ln\left(\frac{X}
 w_i = \frac{P_i Q_i}{X}.
 \end{equation}
 在這裡，\(P_i\) 是第 \(i\) 類飲料的價格，\(Q_i\) 是該類飲料的消費數量，而 \(X = \sum_{i=1}^5 P_i Q_i\) 是所有飲料的總支出，可能會隨月收入的變化而改變。此外，\(\ln(P_j)\) 是第 \(j\) 類飲料價格的自然對數，用於反映價格變化對需求的影響。
-模型的待估參數包括 \(\alpha_i\)、\(\gamma_{ij}\) 和 \(\beta_i\)，分別具有以下意義：
-\begin{itemize}
-    \item \(\alpha_i\)：基礎支出比例，表示在其他條件不變時，第 \(i\) 類飲料的消費佔比。
-    \item \(\gamma_{ij}\)：描述第 \(j\) 類飲料價格對第 \(i\) 類飲料支出的影響。
-    \item \(\beta_i\)：支出彈性，反映總支出變動對第 \(i\) 類飲料需求的影響。
-\end{itemize}
+模型的待估參數包括 \(\alpha_i\)、\(\gamma_{ij}\) 和 \(\beta_i\)，
+\(\alpha_i\)為基礎支出比例，表示在其他條件不變時，第 \(i\) 類飲料的消費佔比。
+\(\beta_i\)描述支出彈性，反映總支出變動對第 \(i\) 類飲料需求的影響。
+\(\gamma_{ij}\)描述第 \(j\) 類飲料價格對第 \(i\) 類飲料支出的影響。
 
 
 \subsection*{價格指數}
@@ -34,7 +32,7 @@ w_i = \frac{P_i Q_i}{X}.
 \end{equation}
 
 \subsection*{彈性}
-AIDS 模型允許我們計算三種類型的需求彈性：
+AIDS 模型允許我們計算幾種需求彈性：
 \begin{itemize}
     \item \textbf{支出彈性} (\(\eta_i\))：
     \begin{equation}
@@ -42,16 +40,18 @@ AIDS 模型允許我們計算三種類型的需求彈性：
     \end{equation}
     該彈性表示總支出變化對第 \(i\) 類飲料需求的影響。
     % 當 \(\eta_i > 1\) 時，該飲料為奢侈品；當 \(\eta_i < 1\) 時，則為必需品。
-    \item \textbf{自價格彈性} (\(\varepsilon_{ii}\))：
+    \item \textbf{價格彈性} (\(\varepsilon_{ii}\))：
     \begin{equation}
-    \varepsilon_{ii} = -1 + \frac{\gamma_{ii}}{w_i} - \beta_i \ln(X / P),
-    \end{equation}
-    該彈性衡量第 \(i\) 類飲料價格變化對其自身需求的影響，通常為負值。
-    \item \textbf{交叉價格彈性} (\(\varepsilon_{ij}\))：
-    \begin{equation}
-    \varepsilon_{ij} = \frac{\gamma_{ij}}{w_i} - \beta_i \ln(X / P),
+    \varepsilon_{ij} = K + \frac{\gamma_{ii}}{w_i} - \beta_i \ln(X / P), \quad
+    K = -1 \text{ if } i=j.
     \end{equation}
     該彈性衡量第 \(j\) 類飲料價格變化對第 \(i\) 類飲料需求的影響。若 \(\varepsilon_{ij} > 0\)，則說明兩者為替代品；若 \(\varepsilon_{ij} < 0\)，則為互補品。
+    % 該彈性衡量第 \(i\) 類飲料價格變化對其自身需求的影響，通常為負值。
+    % \item \textbf{交叉價格彈性} (\(\varepsilon_{ij}\))：
+    % \begin{equation}
+    % \varepsilon_{ij} = \frac{\gamma_{ij}}{w_i} - \beta_i \ln(X / P),
+    % \end{equation}
+    
 \end{itemize}
 
-總結來說，AIDS 模型的核心特徵在於其價格指數的非線性特性，使其能夠精確捕捉多商品之間的需求互動與價格影響。通過支出彈性、自價格彈性和交叉價格彈性的計算，該模型能夠有效分析商品之間的需求關係，並為市場需求預測和政策評估提供有力的工具。
+% 總結來說，AIDS 模型的核心特徵在於其價格指數的非線性特性，使其能夠精確捕捉多商品之間的需求互動與價格影響。通過支出彈性、自價格彈性和交叉價格彈性的計算，該模型能夠有效分析商品之間的需求關係，並為市場需求預測和政策評估提供有力的工具。

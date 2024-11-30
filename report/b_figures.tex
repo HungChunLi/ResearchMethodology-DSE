@@ -23,6 +23,32 @@
 \end{singlespace}
 
 
+\begin{figure}[H]  % [H]固定figure於某一頁
+	\begin{center}
+	\caption{各變數殘差自相關檢定 (ACF) 分析} \label{ACF}
+		\begin{subfigure}[b]{0.65\textwidth}
+			 \caption{AIDS模型} \label{ACF_aids}
+			\vspace{-0.85em}
+			 \includegraphics[width=\textwidth]{../outcome/AIDS_plot_qResid.png}  % both png, jpg can be used for graphs
+		 \end{subfigure}
+		 \begin{subfigure}[b]{0.65\textwidth}
+			\caption{LAAIDS模型} \label{ACF_laaids}
+			\vspace{-0.85em}
+			\includegraphics[width=\textwidth]{../outcome/LAAIDS_plot_qResid.png}
+		\end{subfigure}
+	\end{center}
+\end{figure}
+\vspace{-3em}
+\begin{singlespace}
+		\begin{footnotesize}
+				\noindent {\it Notes:} qResid1 至 qResid5 分別為果蔬汁、碳酸飲料、運動飲料、咖啡飲料和茶飲料。
+				在 AIDS 模型的 ACF 中，果蔬汁、碳酸飲料和茶飲料在低滯後期顯示顯著自相關，且自相關隨滯後增加呈周期性變化，可能與季節性消費相關。
+				運動飲料和咖啡飲料在低滯後期的自相關顯著，但隨滯後增加逐漸衰減至不顯著。
+				LAAIDS 模型的 ACF 與 AIDS 類似，但碳酸飲料和咖啡飲料的殘差自相關更強。
+		\end{footnotesize}
+\end{singlespace}
+
+
 
 % \newpage
 % \begin{figure}[H]
